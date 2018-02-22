@@ -1,0 +1,21 @@
+---
+applications:
+- name: digital-twin-app
+  memory: 128M
+  buildpack: nodejs_buildpack
+  #command:  DEBUG=express:* node app.js
+  command:  node server/app.js
+services:
+  - digital-twin-uaa
+  - digital-twin-timeseries
+ # - your-name-asset
+env:
+    node_env: cloud
+    uaa_service_label : predix-uaa
+    clientId: uaa-client
+    base64ClientCredential: dWFhLWNsaWVudDp0d2lu
+    predix_uaa_name : digital-twin-uaa
+    predix_timeseries_name : digital-twin-timeseries
+    predix_oauthClientId : uaa-client:twin
+    # Following properties configured only for Timeseries WindData service Integration
+    windServiceUrl: "https://digital-twin-query.run.aws-usw02-pr.ice.predix.io/dataquery"

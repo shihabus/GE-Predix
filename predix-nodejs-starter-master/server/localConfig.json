@@ -1,0 +1,13 @@
+{
+  "development": {
+    "clientId": "uaa-client",
+    "uaaURL": "https://c673accd-fcf4-48d6-b1b0-a216c4b177b7.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token",
+    "base64ClientCredential": "dWFhLWNsaWVudDp0d2lu",
+    "appURL": "http://localhost:9191",
+    "timeseriesURL": "wss://gateway-predix-data-services.run.aws-usw02-pr.ice.predix.io/v1/stream/messages",
+    "assetZoneId": "{The Zone ID for the Asset Service Created}",
+    "timeseriesZoneId": "0c8f7d5c-b3b4-46e3-8f05-a0f54eb26a1a",
+    "assetURL": "{Asset URL from VCAPS}",
+    "windServiceURL": "{URL of the microservice <your-name>-winddata-timeseries-service}, e.g.  https://your-name-winddata-timeseries-service.run.asw-usw02-pr.predix.io"
+  }
+}
